@@ -1,0 +1,6 @@
+@HydroOttawaHelper_HostAddress = http://localhost:5178
+
+GET {{HydroOttawaHelper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
