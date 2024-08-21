@@ -15,6 +15,7 @@ builder.Services.AddHttpClient<HolidayService>()
     .AddPolicyHandler(GetRetryPolicy())
     .AddPolicyHandler(GetCircuitBreakerPolicy());
 builder.Services.AddSingleton<RateService>();
+builder.Services.AddSingleton<CostService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

@@ -5,12 +5,13 @@
 
 ## Features
 
-Super simple self-hosted Hydro Ottawa TOU rate API!
+Super simple self-hosted Hydro Ottawa TOU rate and cost API...
 
 Simply sumbit a GET request at /rate and receive the current rate!
 
-Can also pass in a dateTime query string to fetch the rate for any near date and time.
+You can also submit a GET request at /cost and receive a total cost including charges and HST!
 
+Both endpoints can also receive a dateTime query string to fetch the rate or total cost for any near date and time. Keep in mind that total cost is always calculated with current charges and HST.
 
 ## Requirements
 
@@ -19,7 +20,7 @@ Docker or .NET 8.
 
 ## Installation
 
-Grab it from docker hub:
+Grab it from Docker Hub:
 
 ``` docker-compose.yaml
 services:
@@ -43,6 +44,6 @@ Nothing Planned.
 
 ## Release Notes
 
-### 1.1.1
+### 1.2.0
 
-- Made Swagger UI default landing page.
+- Added a new cost endpoint that includes charges and HST.

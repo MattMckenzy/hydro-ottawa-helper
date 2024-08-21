@@ -1,3 +1,4 @@
+using HydroOttawaHelper.Models;
 using HydroOttawaHelper.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -55,9 +56,9 @@ public class RateServiceTests
     [DataRow(2023, 12, 26, 16, 0, 0)]
     public void GetRateTests_ReturnValidRate(int year, int month, int day, int hour, int minute, int second)
     {
-        decimal value = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
+        RateResponse rateResponse = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
 
-        Assert.IsTrue(value == 8.7m);
+        Assert.IsTrue(rateResponse.Rate == 8.7m);
     }
 
     [TestMethod]    
@@ -75,9 +76,9 @@ public class RateServiceTests
     [DataRow(2023, 12, 29, 14, 0, 0)]
     public void GetRateTests_ReturnMediumRate(int year, int month, int day, int hour, int minute, int second)
     {
-        decimal value = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
+        RateResponse rateResponse = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
 
-        Assert.IsTrue(value == 12.2m);
+        Assert.IsTrue(rateResponse.Rate == 12.2m);
     }
 
     [TestMethod]    
@@ -95,9 +96,9 @@ public class RateServiceTests
     [DataRow(2023, 12, 29, 18, 59, 59)]
     public void GetRateTests_ReturnHighRate(int year, int month, int day, int hour, int minute, int second)
     {
-        decimal value = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
+        RateResponse rateResponse = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
 
-        Assert.IsTrue(value == 18.2m);
+        Assert.IsTrue(rateResponse.Rate == 18.2m);
     }
 
 }

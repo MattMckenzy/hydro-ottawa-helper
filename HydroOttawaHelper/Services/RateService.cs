@@ -23,20 +23,28 @@ public class RateService
     private RateDefinitions RateDefinitions { get; }
     private ILogger<RateService> Logger { get; }
 
-    public async Task<decimal> GetRate(DateTime dateTime)
+    public async Task<RateResponse> GetRate(DateTime dateTime)
     {
         Dictionary<string, Holiday> holidays = await HolidayService.GetHolidays(dateTime.Year);
         holidays.TryGetValue(dateTime.ToShortDateString(), out Holiday? holiday);
         foreach (Rate rate in RateDefinitions.Rates)
         {
             if (holiday != null && rate.Filters.Holidays.Contains(holiday.EnglishName))
-                return rate.Value;
+                return new RateResponse
+                {
+                    Rate = rate.Value,
+                    DateTime = dateTime
+                };
 
             if (rate.Filters.Months.Contains(dateTime.Month) &&
                 rate.Filters.DayTimes.Any(dayTime => dayTime.Days.Contains((int)dateTime.DayOfWeek) && 
                     dayTime.StartHour <= dateTime.Hour &&
                     dateTime.Hour < dayTime.EndHour))
-                    return rate.Value;
+                    return new RateResponse
+                    {
+                        Rate = rate.Value,
+                        DateTime = dateTime
+                    };
         }
 
         Logger.LogError("Could not get rate for give DateTime: {datetime}", dateTime);
