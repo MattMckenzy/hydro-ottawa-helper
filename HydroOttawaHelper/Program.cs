@@ -23,7 +23,11 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Hydro Ottawa Helper API");
+    c.RoutePrefix = String.Empty;
+});
 
 app.UseExceptionHandler("/error");
 
@@ -44,4 +48,3 @@ static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
     return HttpPolicyExtensions
         .HandleTransientHttpError()
         .CircuitBreakerAsync(5, TimeSpan.FromSeconds(30));
-}

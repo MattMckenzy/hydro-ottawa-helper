@@ -43,6 +43,6 @@ Nothing Planned.
 
 ## Release Notes
 
-### 1.1.0
+### 1.1.1
 
-- Exposed swagger and updated README
+- Made Swagger UI default landing page.
