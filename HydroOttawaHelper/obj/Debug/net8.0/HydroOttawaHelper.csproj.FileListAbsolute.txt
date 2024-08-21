@@ -1,4 +1,3 @@
-/home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/appsettings.Development.json
 /home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/appsettings.json
 /home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/HydroOttawaHelper
 /home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/HydroOttawaHelper.deps.json
@@ -30,3 +29,8 @@
 /home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/obj/Debug/net8.0/HydroOttawaHelper.pdb
 /home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/obj/Debug/net8.0/HydroOttawaHelper.genruntimeconfig.cache
 /home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/obj/Debug/net8.0/ref/HydroOttawaHelper.dll
+/home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/obj/Debug/net8.0/HydroOttawaHelper.sourcelink.json
+/home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/Microsoft.Extensions.Http.Polly.dll
+/home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/Polly.dll
+/home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelper/bin/Debug/net8.0/Polly.Extensions.Http.dll

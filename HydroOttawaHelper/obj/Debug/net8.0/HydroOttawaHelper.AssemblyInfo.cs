@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HydroOttawaHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f02757a11a79f1ca5b64f11e0c0d0ee0216629b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("HydroOttawaHelper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HydroOttawaHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

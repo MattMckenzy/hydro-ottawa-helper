@@ -30,6 +30,6 @@ Nothing Planned.
 
 ## Release Notes
 
-### 0.1.0
+### 1.0.0
 
-- Initial alpha release
+- Initial Release

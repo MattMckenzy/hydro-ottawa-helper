@@ -10,8 +10,13 @@
             "request": "launch",
             "preLaunchTask": "docker-run: debug",
             "netCore": {
-                "appProject": "${workspaceFolder}/HydroOttawaHelper/HydroOttawaHelper.csproj"
-            }
+                "appProject": "${workspaceFolder}/HydroOttawaHelper/HydroOttawaHelper.csproj",
+            },             
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:",
+                "uriFormat": "http://localhost:32770/swagger/index.html"
+            }  
         }
     ]
 }

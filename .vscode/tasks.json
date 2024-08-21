@@ -68,7 +68,15 @@
             "dependsOn": [
                 "docker-build: debug"
             ],
-            "dockerRun": {},
+            "dockerRun": {
+                "ports": [ 
+                    {
+                        "containerPort": 80,
+                        "hostPort": 32770
+                    },
+                ],
+                "env": { "TZ": "America/Toronto" }
+            },
             "netCore": {
                 "appProject": "${workspaceFolder}/HydroOttawaHelper/HydroOttawaHelper.csproj",
                 "enableDebugging": true,
@@ -81,10 +89,25 @@
             "dependsOn": [
                 "docker-build: release"
             ],
-            "dockerRun": {},
+            "dockerRun": {
+                "ports": [ 
+                    {
+                        "containerPort": 80,
+                        "hostPort": 32770
+                    } 
+                ]
+            },
             "netCore": {
                 "appProject": "${workspaceFolder}/HydroOttawaHelper/HydroOttawaHelper.csproj"
             }
+        },
+        {
+            "type": "shell",
+            "label": "publish",
+            "command": "publish",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
         }
     ]
 }
