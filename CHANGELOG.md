@@ -1,6 +1,10 @@
 # Change Log
 
-All notable changes to "HydroOttawaHelper" will be documented in this file.
+All notable changes to Hydro Ottawa Helper will be documented in this file.
+
+## 1.1.0
+
+- Exposed swagger and updated README
 
 ## 1.0.0
 
