@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MSgzLsPiVUo=",
+  "dgSpecHash": "h3qSZp0673GvNYgl56zcvzSZoPNcPveCfrFOQ1WvQIbrMlGPvBzNkNEORQrmlLnLNsKCQyXMUCfrVPnD2GFU8Q==",
   "success": true,
   "projectFilePath": "/home/mattmckenzy/Projects/HydroOttawaHelper/HydroOttawaHelperTests/HydroOttawaHelperTests.csproj",
   "expectedPackageFiles": [
@@ -36,7 +36,8 @@
     "/home/mattmckenzy/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/home/mattmckenzy/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "/home/mattmckenzy/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
-    "/home/mattmckenzy/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/home/mattmckenzy/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/home/mattmckenzy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
   ],
   "logs": []
 }
