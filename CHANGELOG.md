@@ -2,6 +2,10 @@
 
 All notable changes to Hydro Ottawa Helper will be documented in this file.
 
+## 1.3
+
+- Updated to November 2024 Rates
+
 ## 1.2.0
 
 - Added a new cost endpoint that includes charges and HST.

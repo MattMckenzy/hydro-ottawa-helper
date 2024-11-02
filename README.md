@@ -47,3 +47,6 @@ Nothing Planned.
 ### 1.2.0
 
 - Added a new cost endpoint that includes charges and HST.
+### 1.3
+
+- Updated to November 2024 Rates
