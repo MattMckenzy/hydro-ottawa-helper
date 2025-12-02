@@ -58,10 +58,10 @@ public class RateServiceTests
     {
         RateResponse rateResponse = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
 
-        Assert.IsTrue(rateResponse.Rate == 8.7m);
+        Assert.IsTrue(rateResponse.Rate == 7.6m);
     }
 
-    [TestMethod]    
+    [TestMethod]
     [DataRow(2023, 1, 3, 11, 0, 0)]
     [DataRow(2023, 2, 7, 13, 0, 0)]
     [DataRow(2023, 3, 15, 15, 0, 0)]
@@ -81,7 +81,7 @@ public class RateServiceTests
         Assert.IsTrue(rateResponse.Rate == 12.2m);
     }
 
-    [TestMethod]    
+    [TestMethod]
     [DataRow(2023, 1, 4, 7, 0, 0)]
     [DataRow(2023, 2, 8, 8, 0, 0)]
     [DataRow(2023, 3, 16, 9, 0, 0)]
@@ -98,7 +98,7 @@ public class RateServiceTests
     {
         RateResponse rateResponse = RateService.GetRate(new DateTime(year, month, day, hour, minute, second)).GetAwaiter().GetResult();
 
-        Assert.IsTrue(rateResponse.Rate == 18.2m);
+        Assert.IsTrue(rateResponse.Rate == 15.8m);
     }
 
 }

@@ -2,6 +2,10 @@
 
 All notable changes to Hydro Ottawa Helper will be documented in this file.
 
+## 1.4
+
+- Updated default prices to reflect changes made on November 1st, 2025
+
 ## 1.3
 
 - Updated to November 2024 Rates

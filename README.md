@@ -51,3 +51,6 @@ Nothing Planned.
 ### 1.3
 
 - Updated to November 2024 Rates
+### 1.4
+
+- Updated default prices to reflect changes made on November 1st, 2025
